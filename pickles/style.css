@@ -1,0 +1,210 @@
+@charset "utf-8";
+*{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.8;
+  color: #2c2c2c;
+}
+
+.container {
+  padding: 30px;
+}
+
+section:nth-of-type(even) {
+  background-color:#e8e9da;
+}
+
+section {
+  padding: 30px 0;
+}
+
+.sawarabi-mincho-regular {
+  font-family: "Sawarabi Mincho", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*ここからヘッダー*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #515508;
+  height: 120px;
+}
+
+nav {
+  padding: 50px 20px;
+}
+
+ul {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.img00 {
+  width: 100%;
+  height: 700px;
+  margin: 0 auto;
+}
+
+.img00 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo img {
+  width: 80px;
+  padding: 10px 0 0 50px;
+  vertical-align: top;
+}
+/*ここからメイン*/
+#syoukai {
+  margin-bottom: 100px;
+}
+
+#syoukai h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.img01 {
+  width: 600px;
+  height: 450px;
+}
+
+.img01 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sec1 {
+  display: flex;
+  gap: 30px;
+}
+
+.text01 h2 {
+  margin-bottom: 30px;
+}
+
+.text01 p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+/*-------------------------------*/
+#su {
+  margin-bottom: 100px;
+}
+
+#su h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#su h3 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+.img02 {
+  width: 350px;
+  height: 400px;
+}
+
+.img02 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-area {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.card {
+  width: 350px;
+}
+/*-------------------------------*/
+#resipi {
+  margin-bottom: 100px;
+}
+
+.sec2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#resipi h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 400px
+}
+
+th, td {
+  border: solid 1px #666;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.container h2 {
+  font-size: 32px;
+  background-color: #116d2f;
+  color: #fff;
+  width: 400px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 24px;
+}
+/*-------------------------------*/
+#hozon h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.sec3 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+/*ここからフッター*/
+footer {
+  padding: 50px;
+  background-color: #515508;
+}
+
+footer p {
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.sec1 .img01 img {
+  width: 600px;
+}
+
+.pagetop {
+  text-align: right;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+
+.pagetop img {
+  width: 50px;
+}
