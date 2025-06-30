@@ -1,0 +1,417 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "Passion One", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  color: #1d1d1d;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  padding: 120px 0 160px 0;
+}
+
+section:nth-child(even) {
+  background-color: #1d1d1d;
+}
+
+section h2 {
+  margin-bottom: 80px;
+  font-size: 80px;
+}
+
+section h2 span {
+  font-size: 16px;
+}
+
+section h3 {
+  margin-bottom: 38px;
+  font-size: 20px;
+}
+
+p {
+  line-height: 2.25;
+  font-family: sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+/*　　↓　　　Loading　　　↓　　*/
+
+
+#loading {
+  display: grid;
+  place-items: center;
+  background-color: #1d1d1d;
+  color: #fff;
+  position: fixed;
+  inset: 0;
+  font-size: 6rem;
+  transition: opacity 0.5s ease;
+  z-index: 200;
+}
+
+#loading.loaded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/*　　↓　　　Header　　　↓　　*/
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 40px 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: color 0.3s;
+  z-index: 100;
+}
+
+header h1 {
+  width: 47px;
+  height: 47px;
+}
+
+header h1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+header a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #1d1d1d; 
+  transition: width 0.3s ease;
+}
+
+.white-text a {
+  color: white;
+}
+
+.white-text a::after {
+  background-color: #fff; 
+}
+
+header ul {
+  display: flex;
+  gap: 100px;
+  padding: 10px;
+}
+
+header a {
+  font-size: 20px;
+  position: relative; 
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+header a:hover::after {
+  width: 100%; 
+}
+
+
+/*　　↓　　　Mainvisual Area　　　↓　　*/
+
+
+.mainvisualArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 120px;
+  margin: auto;
+  width: min(100%, 1160px);
+  height: 100vh;
+}
+
+.mainvisualArea .mainvisualCatch1 {
+  font-size: 100px;
+}
+
+.mainvisualArea .mainvisualCatch2 {
+  text-align: right;
+  font-size: 100px;
+}
+
+.mainvisualArea .mainvisual {
+  margin: 10px auto;
+  width: 70%;
+}
+
+.mainvisualArea .mainvisual img {
+  height: auto;
+}
+
+.mainvisualArea .scroll {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+    50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+    50.1% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+    100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.mainvisualArea .scroll img {
+  display: inline-block;
+  animation: scrollAnimation;
+  animation-duration: 1.8s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+
+
+/*　　↓　　　About Section　　　↓　　*/
+
+
+.aboutSec {
+  width: 100%;
+}
+
+.aboutSec .aboutInner {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  padding-inline: 20px; 
+}
+
+.aboutSec .aboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.aboutSec .aboutBtn {
+  text-align: right;
+  margin-top: 100px;
+}
+
+.aboutSec .aboutBtn a {
+  font-size: 20px;
+  padding: 1em 2em;
+  border: 1px solid #1d1d1d;
+  background-color: #fff;
+}
+
+.aboutSec .aboutBtn a:hover {
+  background-color: #1d1d1d;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in;
+  transition-delay: 0ms;
+}
+
+.aboutSec #aboutPhoto {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 3 / 5;
+}
+
+.aboutSec #aboutPhoto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50%;
+  filter: grayscale(100%);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.aboutSec #aboutText {
+  width: 60%;
+}
+
+
+/*　　↓　　　Skills Section　　　↓　　*/
+
+
+.skillsSec {
+  width: 100%;
+}
+
+.skillsSec .skillsInner {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  padding-inline: 20px; 
+}
+
+.skillsSec h2,
+.skillsSec h3,
+.skillsSec p,
+.skillsSec span {
+  color: #fff;
+}
+
+.skillsSec .skillsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 160px;
+  margin-left: 330px;
+}
+
+.skillsSec h3 {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #fff;
+  font-size: 60px;
+  font-style: italic;
+  margin: 0;
+}
+
+.skillsSec p {
+  margin: 40px 0;
+  font-size: 15px;
+}
+
+.skillsSec .toolsBox {
+  display: flex;
+  gap: 10%;
+}
+
+.skillsSec .toolsicon {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.skillsSec .toolsicon figure {
+  width: 80px;
+  height: 80px;
+}
+
+.skillsSec .toolsicon figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/*　　↓　　　Works Section　　　↓　　*/
+
+
+.worksSec {
+  width: 100%;
+}
+
+.worksSec .worksInner {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  padding-inline: 20px; 
+}
+
+.worksSec .worksBox ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.worksSec h3 {
+  margin: 20px 0 0 0;
+}
+
+.worksSec .worksBox div {
+  width: 340px;
+  height: 215px;
+}
+
+.worksSec .worksBox img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #1d1d1d;
+}
+
+.worksSec .worksBox img {
+  transition: transform 0.3s ease;
+}
+
+.worksSec .worksBox img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/*　　↓　　　Contact Section　　　↓　　*/
+
+.contactSec h2,
+.contactSec p,
+.contactSec span,
+.contactSec a {
+  color: #fff;
+}
+
+.contactSec address {
+  padding-left: 100px;
+}
+
+.contactSec address a {
+  font-size: 80px;
+}
+
+.contactSec .contactInner {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  padding-inline: 20px; 
+}
+
+
+/*　　↓　　　Footer　　　↓　　*/
+
+
+footer {
+  background-color: #1d1d1d;
+}
+
+footer .footerInner {
+  width: min(100%, 1160px);
+  margin-inline: auto;
+  padding: 20px 40px 80px 40px; 
+  border-top: 1px solid #fff;
+}
+
+footer p small {
+  color: #fff;
+  font-family: sans-serif;
+}
