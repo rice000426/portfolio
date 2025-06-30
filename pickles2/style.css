@@ -1,0 +1,273 @@
+@charset "utf-8";
+* {
+    line-height: 1.7;
+    color: #222222;
+    font-family: '游ゴシック体', YuGothic, '游ゴシック Medium', '游ゴシック', 'Yu Gothic', sans-serif;
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.container2 {
+    padding: 0 30px 30px;
+}
+
+section {
+    margin-top: 100px;
+}
+
+section:last-of-type {
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 34px;
+    margin: 100px 0 50px 0;
+    text-align: center;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+span {
+    color: #3bb077;
+    font-size: 40px;
+}
+
+p {
+    line-height: 2.25;
+}
+
+img {
+    vertical-align: bottom;
+}
+/*ここからヘッダー*/
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 120px;
+    background-color: #3bb077;
+}
+
+header ul {
+    display: flex;
+    gap: 30px;
+}
+
+header li {
+    list-style: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.main-v {
+    display: flex;
+    justify-content: center;
+}
+
+.main-v img {
+    opacity: 0.7;
+}
+/*ここからメインセクション1*/
+#sec1 {
+    width: 1220px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#sec1 p {
+    margin-bottom: 25px;
+}
+
+.text-area {
+    width: 440px;
+}
+
+.img02 {
+    position: absolute;
+    top: 120px;
+    right: 180px;
+    width: 550px;
+    height: 400px;
+    z-index: 50;
+}
+
+.img03 {
+    position: absolute;
+    top: 350px;
+    right: 0;
+    width: 300px;
+    height: 450px;
+}
+
+.img04 {
+    position: absolute;
+    top: 500px;
+    right: 360px;
+    width: 300px;
+    height: 300px;
+    z-index: 100;
+}
+
+.img02 img, .img03 img, .img04 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*ここからメインセクション2*/
+#sec2 h2 {
+    margin-top: 130px;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.card2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 400px;
+    margin-bottom: 50px;
+}
+
+.card1 span, .card2 span {
+    margin-right: 120px;
+}
+
+.img-box {
+    width: 300px;
+    height: 400px;
+}
+
+.card1 img, .card2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*ここからメインセクション3*/
+#sec3 {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.box-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    display: flex;
+}
+
+.text-area2 ul {
+    margin-top: 15px;
+}
+
+.text-area2 span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#sec3 li:nth-of-type(even) {
+    background-color: antiquewhite;
+}
+
+.h {
+    width: 200px;
+}
+/*ここからメインセクション4*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: brown;
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: rgb(121, 28, 28);
+}
+
+#sec4 {
+    width: 900px;
+    margin: 0 auto;
+}
+
+#sec4 span {
+    color: #222222;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+#sec4 .box-area {
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+#sec4 .box2 {
+    width: 300px;
+}
+
+.border {
+    border: solid 1px #222222;
+    border-radius: 20px;
+    padding: 50px 30px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+}
+
+.img05 {
+    width: 440px;
+    height: 300px;
+}
+
+.img05 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*ここからフッター*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #3bb077;
+    height: 120px;
+}
+
+footer p {
+    color: #ffffff;
+}
