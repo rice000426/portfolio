@@ -54,6 +54,10 @@ p {
 }
 
 
+.nav ul li a.active {
+    color: #ffffff;
+}
+
 /*　　↓　　　Loading　　　↓　　*/
 
 
